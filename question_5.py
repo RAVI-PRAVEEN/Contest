@@ -12,13 +12,8 @@ def getMaxToys(prices, money):
     
     return max_toys
 
-n = int(input("Enter the number of toys: ")) 
-prices = [] 
-for i in range(n):
-    price = int(input())
-    prices.append(price)
-
-money = int(input("Enter the available money (budget): "))
+n=int(input())
+prices = eval(input())
+money = int(input())
 
 print(getMaxToys(prices, money))
-
